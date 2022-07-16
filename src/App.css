@@ -3,7 +3,6 @@
 }
 
 .navBar {
-  width: 100vw;
   margin-bottom: 2em;
   background: linear-gradient(45deg, #c5c5c5 0%, #969696 100%);
 }
@@ -12,9 +11,9 @@
   font-weight: 400;
   font-size: 20px;
   display: flex;
-  gap: 24px;
   color: rgb(247, 247, 247);
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   padding: 2% 5%;
 }
