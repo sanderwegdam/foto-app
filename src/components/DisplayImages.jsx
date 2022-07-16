@@ -16,7 +16,7 @@ const DisplayImages = ({ category }) => {
     async function loadInfo(category = "flower") {
         try {
             const data = await
-                fetch(`https://api.unsplash.com/search/photos?query=${category}&client_id=0j-iiYbuU8qQsQiSN14wF4D9rw8M6iUT0QbZADx72rs`);
+                fetch(`https://api.unsplash.com/search/photos?query=${category}&client_id=0j-iiYbuU8qQsQiSN14wF4D9rw8M6iUT0QbZADx72rs&per_page=20`);
             const response = await data.json();
             console.log(response.results)
             setResult(response.results)
@@ -30,11 +30,9 @@ const DisplayImages = ({ category }) => {
                 data.map(img => (
                     <ImageItem key={img.id} title={img.alt_description} url={img.urls.small} />
                 ))
-
             }
         </div>
     );
 }
-
 
 export default DisplayImages;
