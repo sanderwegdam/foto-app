@@ -2,7 +2,6 @@ import React from 'react';
 import ImageItem from './ImageItem';
 import { useEffect, useState } from "react";
 
-
 const DisplayImages = ({ category }) => {
 
     loadInfo(category);
@@ -13,7 +12,7 @@ const DisplayImages = ({ category }) => {
     }, []);
 
 
-    async function loadInfo(category = "flower") {
+    async function loadInfo(category) {
         try {
             const data = await
                 fetch(`https://api.unsplash.com/search/photos?query=${category}&client_id=0j-iiYbuU8qQsQiSN14wF4D9rw8M6iUT0QbZADx72rs&per_page=20`);
