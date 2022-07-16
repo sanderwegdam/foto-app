@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+.navBar {
+  width: 100vw;
+  margin-bottom: 2em;
+  background: linear-gradient(45deg, #c5c5c5 0%, #969696 100%);
+}
+
+.nav-container {
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  gap: 24px;
+  color: rgb(247, 247, 247);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2% 5%;
+}
+
+.container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3em 5%;
+}
+
+input[type="text"] {
+  font-size: inherit;
+  padding: 12px 20px;
+  outline: none;
+  border: solid 1px #333;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 0.4rem;
+}
+
+.input-text:focus {
+  outline: 1px solid black;
+}
+
+.input-text::placeholder {
+  color: #b0bec5;
+}
+
+a {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  outline: none;
+}
+
+.error {
+  color: darkgrey;
+}
