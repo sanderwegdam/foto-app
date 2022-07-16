@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from "./Navbar";
+import Form from 'react-bootstrap/Form';
 
 const AddCategory = ({ setCategory }) => {
 
@@ -27,12 +28,13 @@ const AddCategory = ({ setCategory }) => {
         <>
             <Navbar />
 
-            <form onSubmit={searchPhoto}>
+            <Form onSubmit={searchPhoto}>
+
                 <input type="text" className="input-text" placeholder='Zoekwoord...'
                     onChange={e => setValue(e.target.value)}
                     value={value}
                 />
-            </form>
+            </Form>
             {error ? <p className='error'>Vul iets in</p> : ""}
         </>
     );

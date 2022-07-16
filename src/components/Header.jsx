@@ -1,15 +1,13 @@
 import React from 'react';
 import '.././App.css';
-import { Navbar } from 'reactstrap';
+import { Navbar } from "react-bootstrap"
 
 class Header extends React.Component {
 	render() {
 		return (
 			<div>
-				<Navbar color="primary">
-					<div className="nav-container" id="brand">
-						Foto App
-					</div>
+				<Navbar sticky="top">
+					Foto App
 				</Navbar>
 			</div>
 		);
