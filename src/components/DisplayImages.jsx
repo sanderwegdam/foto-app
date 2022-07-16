@@ -8,9 +8,8 @@ const DisplayImages = ({ category }) => {
 
     const [data, setResult] = useState(null);
     useEffect(() => {
-        loadInfo();
-    }, []);
-
+        loadInfo(category);
+    }, [category]);
 
     async function loadInfo(category) {
         try {
