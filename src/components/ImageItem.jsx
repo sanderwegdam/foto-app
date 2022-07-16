@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 const ImageItem = ({ title, url }) => {
     return (
-        <Card className="card h-100 p-2 d-lg-flex align-items-center justify-content-center" style={{ maxWidth: "270px", marginLeft: "10px", border: "1px solid rgba(13,110,253,.15)" }}>
+        <Card className="card h-100 p-2 align-items-center justify-content-center" style={{ maxWidth: "270px", marginLeft: "10px", border: "1px solid rgba(13,110,253,.15)" }}>
             <Card.Img
                 variant="top"
                 src={url}
