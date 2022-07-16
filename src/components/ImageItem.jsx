@@ -8,7 +8,7 @@ const ImageItem = ({ title, url }) => {
                 variant="top"
                 src={url}
                 height="300px"
-                style={{ objectFit: "cover", maxWidth: "375px" }} alt={title}
+                style={{ objectFit: "cover", maxWidth: "280px" }} alt={title}
             />
         </Card>
     );
