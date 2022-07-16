@@ -1,6 +1,6 @@
 import React from 'react';
 import '.././App.css';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import { Navbar } from 'reactstrap';
 
 class Header extends React.Component {
 	render() {
